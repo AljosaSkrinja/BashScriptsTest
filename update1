@@ -9,5 +9,6 @@ if [ $DateOfUpdate = $TodaysDate ];then
 	echo "Same"
 else
 	echo "Different"
+	source /usr/local/bin/update
 fi
 
