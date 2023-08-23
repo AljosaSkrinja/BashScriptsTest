@@ -11,7 +11,7 @@ done
 touch $name
 echo "#!/bin/bash" >> $name
 chmod +x $name
-mv $name ~/Scripts
-cd ~/Scripts
+mv $name $path
+cd $path
 nano $name
 echo "Created Successfully"
