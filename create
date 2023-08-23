@@ -1,0 +1,17 @@
+#!/bin/bash
+
+name=$1
+path=~/Scripts
+while [ -f ~/Scripts/$name ]
+do
+	echo "Error File already exists!!"
+	exit
+done
+
+touch $name
+echo "#!/bin/bash" >> $name
+chmod +x $name
+mv $name ~/Scripts
+cd ~/Scripts
+nano $name
+echo "Created Successfully"

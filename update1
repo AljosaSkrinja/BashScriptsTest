@@ -1,0 +1,13 @@
+#!/bin/bash
+#get when was system last updated
+DateOfUpdate=$(tail -n 1 /var/log/apt/history.log | cut -c16-21)
+  echo $DateOfUpdate
+TodaysDate=$(date +%F | cut -c6-10)
+  echo $TodaysDate
+
+if [ $DateOfUpdate = $TodaysDate ];then
+	echo "Same"
+else
+	echo "Different"
+fi
+

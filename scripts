@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd /home/walla/Scripts
+ls -l
